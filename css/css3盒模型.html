@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>未知宽高元素水平垂直居中</title>
+</head>
+<style>
+.flex-container {
+  list-style: none;
+   display: flex;    /*开启盒子模型*/
+   /*排列方向  row：水平正序排列  row-reverse：水平倒叙 column：垂直正序 column-reverse：垂直倒叙*/
+   flex-direction: row;
+   /*是否换行  nowrap(默认)：不换行  wrap：换行 wrap-reverse：换行，下一行与主轴方向相反*/
+   flex-wrap: wrap;
+   /*对剩余空间的分配方式 flex-start:左对齐 flex-end:对齐 flex-center:居中对齐（剩余空间在两侧评分） space-around:剩余空间平均分配*/
+   justify-content:flex-start;
+}
+
+.flex-item {
+   padding: 5px;
+   /*容器中有空白空间，获取空白空白空间的比例*/
+   flex-grow: 1;
+    /*容器中有空白空间，自身压缩的比例*/
+   flex-shrink:1;
+}
+.flex-item:nth-child(1) {
+   flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+   flex-grow: 2;
+}
+
+.flex-item:nth-child(3) {
+   flex-grow: 3;
+}
+</style>
+<body>
+  <ul class="flex-container">
+     <li class="flex-item">1111111111111</li>
+     <li class="flex-item">222222222222</li>
+     <li class="flex-item">333333333333</li>
+     <li class="flex-item">444444444444</li>
+     <li class="flex-item">555555555555</li>
+     <li class="flex-item">666666666666</li>
+  </ul>
+</body>
+</html>
