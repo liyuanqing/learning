@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>querySelector 和 querySelectorAll </title>
+  </head>
+  <body>
+    <div id="q1">
+      <div class="w1">
+        <span class="e1">测试</span>
+        <span class="e2">测试</span>
+      </div>
+      <div class="w2">
+        <span class="e3">测试</span>
+        <span class="e4">测试</span>
+      </div>
+    </div>
+  <body>
+</html>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script>
+var d1 = document.getElementById('q1'),
+    obj1 = d1.querySelector('div span'),
+    obj2 = d1.querySelector('div .e2'),
+    obj3 = d1.querySelectorAll('div span'),
+    obj4 = $(d1).find('div span');
+console.log(obj1)  //<span class="e1">测试</span>
+console.log(obj2) //<span class="e2">测试</span>
+console.log(obj3)  //[span.e1,span.e2,span.e3,span.e4]
+console.log(obj3.length) //4
+console.log(obj4) //[span.e1, span.e2, span.e3, span.e4, prevObject: init(1), context: div#q1, selector: "div span"]
+console.log(obj3.length) //4
+</script>
