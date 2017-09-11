@@ -1,7 +1,7 @@
 ## 前端学习计划
 ### webpack(深入)
 ### react(深入)
-- [ ] connnect 函数
+- [x] connnect 函数
 - [ ] redux 中间件
 - [ ] react-router-redux
 ### js(深入)
