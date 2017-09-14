@@ -7,6 +7,7 @@
 ### js(深入)
 - [ ] 正则
 - [ ] 原型链，对象，构造函数
+- [x] proptotype和-proto- 关系
 - [ ] 剖析vue实现原理，自己动手实现mvvm（https://github.com/DMQ/mvvm）
 ### css
 - [ ] 移动端兼容
